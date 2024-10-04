@@ -1,4 +1,4 @@
-import {cart} from '../data/cart.js';
+import {cart,removeFromCart} from '../data/cart.js';
 import {products} from '../data/products.js'
 import { format } from './utils/money.js';
 
@@ -108,5 +108,6 @@ document.querySelectorAll('.js-delete-link').forEach((link)=>
   link.addEventListener('click',()=>
   {
      const productId = link.dataset.productId;
+     removeFromCart(productId);
   });
 });
