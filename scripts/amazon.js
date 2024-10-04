@@ -1,5 +1,5 @@
 
-import {cart} from  '../data/cart.js';
+import {cart,saveToStorage} from  '../data/cart.js';
 import {products} from '../data/products.js';
 import { format } from './utils/money.js';
 
@@ -84,6 +84,8 @@ document.querySelectorAll('.jsaddtocart').forEach((button) => {
           productId: productId,
           quantity: 1
         });
+
+        saveToStorage();
       }
 
 
