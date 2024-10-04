@@ -11,7 +11,7 @@ export let cart = [
     }
 ];
 
-function removeFromCart(productId)
+export function removeFromCart(productId)
 {
 
  const newCart = [];
