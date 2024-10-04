@@ -82,7 +82,8 @@ document.querySelectorAll('.jsaddtocart').forEach((button) => {
       } else {
         cart.push({
           productId: productId,
-          quantity: 1
+          quantity: 1,
+          deliveryoptionId: '1'
         });
 
         saveToStorage();
